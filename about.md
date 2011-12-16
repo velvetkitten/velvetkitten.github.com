@@ -1,6 +1,7 @@
 ---
 layout: default
-title: Home
+title: About
 description: Jennifer Saltzstein &amp; Ross Kaffenberger are getting married!
 ---
-<image src='/images/jenandross.jpg'/>
+
+## Jen is going to tell our story here

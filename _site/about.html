@@ -2,8 +2,8 @@
 <html lang="en">
   <head>
     <meta charset="utf-8">
-    <title>{{ page.title }}</title>
-		<meta name="description" content="{{ page.description }}">
+    <title>About</title>
+		<meta name="description" content="Jennifer Saltzstein &amp; Ross Kaffenberger are getting married!">
     <meta name="author" content="None">
 
     <!-- Le HTML5 shim, for IE6-8 support of HTML elements -->
@@ -35,10 +35,11 @@
       </div>
     </nav>
     <div id="main" class="container">
-      <h3>{{ page.title }}</h3>
-      <p>{{ page.description }}</p>
+      <h3>About</h3>
+      <p>Jennifer Saltzstein &amp; Ross Kaffenberger are getting married!</p>
       <div class="content">
-        {{ content }}
+        <h2>Jen is going to tell our story here</h2>
+
       </div>
     </div>
     <footer id="footer">
@@ -46,7 +47,19 @@
         <!-- <a href="http://mixpanel.com/f/partner"><img src="http://mixpanel.com/site_media/images/partner/badge_blue.png" alt="Real Time Web Analytics" /></a> -->
       </div>
     </footer>
-    {% include ga.html %}
-    {% include mixpanel.html %}
+    <script type="text/javascript">
+
+  var _gaq = _gaq || [];
+  _gaq.push(['_setAccount', 'UA-27758142-1']);
+  _gaq.push(['_trackPageview']);
+
+  (function() {
+    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+  })();
+
+</script>
+    
   </body>
 </html>
