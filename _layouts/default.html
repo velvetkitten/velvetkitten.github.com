@@ -12,10 +12,8 @@
     <![endif]-->
 
     <link href='http://fonts.googleapis.com/css?family=Fresca' rel='stylesheet' type='text/css'>
-		<link rel="stylesheet" href="/css/bootstrap.min.css">
-		<link rel="stylesheet" href="/css/pre-styles.css">
+    <link rel="stylesheet" href="/css/bootstrap.min.css">
 		<link rel="stylesheet" href="/css/styles.css">
-		<link rel="stylesheet" href="/css/post-styles.css">
 <!-- Le fav and touch icons -->
   </head>
 
@@ -26,18 +24,8 @@
         <h2>May 19th, 2012</h2>
       </div>
     </header>
-    <nav id="nav">
-      <div class="container">
-        <a href='/'>Home</a>
-        <a href='/events.html'>Events</a>
-        <a href='/guestbook.html'>Guestbook</a>
-		<a href='/hotelblocks.html'>Hotel Blocks</a>
-        <a href='/Ceremony.html'>Ceremony</a>
-		<a href='/about.html'>About us</a>
-		<a href='/Babysitting.html'>Babysitting</a>
-      </div>
-    </nav>
-    <div id="main" class="container">
+    {% include header_nav.html %}
+    <div id="main" class="container clearfix">
       <h3>{{ page.title }}</h3>
       <p>{{ page.description }}</p>
       <div class="content">
@@ -45,9 +33,7 @@
       </div>
     </div>
     <footer id="footer">
-      <div class="container">
-        <!-- <a href="http://mixpanel.com/f/partner"><img src="http://mixpanel.com/site_media/images/partner/badge_blue.png" alt="Real Time Web Analytics" /></a> -->
-      </div>
+      {% include footer_nav.html %}
     </footer>
     {% include ga.html %}
     {% include mixpanel.html %}

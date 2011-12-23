@@ -5,10 +5,17 @@ html, body {
 }
 
 body {
-    color: #3012424;
-    background-color:#33657d;
-    font-family: Helvetica,Tahoma,Geneva,sans-serif;
-/*    background: transparent url(/img/background.png) repeat;*/
+  background: #33657d; /* Old browsers */
+  background: -moz-linear-gradient(left,  #33657d 0%, #32b5ba 49%, #33657d 100%); /* FF3.6+ */
+  background: -webkit-gradient(linear, left top, right top, color-stop(0%,#33657d), color-stop(49%,#32b5ba), color-stop(100%,#33657d)); /* Chrome,Safari4+ */
+  background: -webkit-linear-gradient(left,  #33657d 0%,#32b5ba 49%,#33657d 100%); /* Chrome10+,Safari5.1+ */
+  background: -o-linear-gradient(left,  #33657d 0%,#32b5ba 49%,#33657d 100%); /* Opera 11.10+ */
+  background: -ms-linear-gradient(left,  #33657d 0%,#32b5ba 49%,#33657d 100%); /* IE10+ */
+  background: linear-gradient(left,  #33657d 0%,#32b5ba 49%,#33657d 100%); /* W3C */
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#33657d', endColorstr='#33657d',GradientType=1 ); /* IE6-9 */
+  
+  font-family: Helvetica,Tahoma,Geneva,sans-serif;
+  /*    background: transparent url(/img/background.png) repeat;*/
 }
 p {
   line-height: 1.2em;
@@ -69,18 +76,19 @@ img { text-align:center;}
   background: linear-gradient(#90BE0A,#7BA209);
 }
 
+.topbar {
+  position:static;
+}
+
+.topbar a {
+  color: white;
+  text-shadow: 0 1px #333;
+}
+
 #main {
     color: #006521;
-    top: 25px;
-    min-width: 200px;
-    min-height: 150px;
-    margin-left: -478px;
-    bottom: 18px;
     padding: 1em;
     margin: 1em auto;
-    overflow: hidden;
-    position: relative;
-    width: 650px;
     background-color:#F9F8F3;
     -moz-border-radius: 8px;
     -webkit-border-radius: 8px;
@@ -106,16 +114,31 @@ header h1 {
   font-weight:bold;
   line-height:1.25em;
   text-transform:lowercase;
-  color:#f4cd69;
-
-
+  color:#D0AF58;
 }
 header h1 { color:##f4cd69; }
 header h2 { color:#f4cd69; }
 
-
 header img {
-    vertical-align: middle;
+  vertical-align: middle;
+}
+
+.topbar .item {
+  display: block;
+  float: none;
+  padding: 10px 10px 11px;
+  line-height: 19px;
+  text-decoration: none;
+}
+footer {
+  margin-top:10px;
+  border: none;
+  padding:25px 0 50px;
+}
+
+footer .container {
+  padding-top:20px;
+  border-top: 2px solid #999;
 }
 #browser-warning {
   background-color: #FFDAD9;
@@ -130,4 +153,3 @@ header img {
 .location-indent {
 	padding-left:61px;
 }
-
