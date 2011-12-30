@@ -1,5 +1,7 @@
 .fresca { font-family: 'Fresca', sans-serif; }
+*, .trykker { font-family: 'Trykker', sans-serif; }
 
+.container { width: 740px; }
 html, body {
     height: 100%;
 }
@@ -13,7 +15,7 @@ body {
   background: -ms-linear-gradient(left,  #33657d 0%,#32b5ba 49%,#33657d 100%); /* IE10+ */
   background: linear-gradient(left,  #33657d 0%,#32b5ba 49%,#33657d 100%); /* W3C */
   filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#33657d', endColorstr='#33657d',GradientType=1 ); /* IE6-9 */
-  
+
   font-family: Helvetica,Tahoma,Geneva,sans-serif;
   /*    background: transparent url(/img/background.png) repeat;*/
 }
@@ -86,7 +88,6 @@ img { text-align:center;}
 }
 
 #main {
-    color: #006521;
     padding: 1em;
     margin: 1em auto;
     background-color:#F9F8F3;
@@ -103,9 +104,18 @@ img { text-align:center;}
 /*    background: transparent url(/img/frame-background.png) repeat;*/
     background:white;
 }
+#main, #main p {
+  font-size: 16px;
+  line-height: 1.5em;
+}
+#main h3 {
+  border-bottom: 2px solid black;
+  margin-bottom:0.5em;
+}
 header {
   letter-spacing: 0.08em;
   text-align:center;
+  padding: 1em 0;
 }
 header a, header a:visited, header a:hover,
 header h1 {
@@ -114,9 +124,8 @@ header h1 {
   font-weight:bold;
   line-height:1.25em;
   text-transform:lowercase;
-  color:#D0AF58;
 }
-header h1 { color:##f4cd69; }
+header h1 { color:#f4cd69; }
 header h2 { color:#f4cd69; }
 
 header img {

@@ -4,3 +4,15 @@ title: Home
 description: Jennifer Saltzstein &amp; Ross Kaffenberger are getting married!
 ---
 <image src='/images/barb engagement.jpeg'/ width=400px>
+
+<div>
+  {% for post in site.posts %}
+    <div>
+      {{ post.content }}
+    </div>
+  {% endfor %}
+  
+  <h3>FAQ</h3>
+  <p><a href='/hotelblocks.html'>Hotel info</a></p>
+  <p><a href='/Ceremony.html'>Where's the ceremony?</a></p>
+</div>
