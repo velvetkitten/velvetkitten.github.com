@@ -1,41 +1,6 @@
-<!DOCTYPE html>
-<html lang="en">
-  <head>
-    <meta charset="utf-8">
-    <title>{{ page.title }}</title>
-		<meta name="description" content="{{ page.description }}">
-    <meta name="author" content="None">
-
-    <!-- Le HTML5 shim, for IE6-8 support of HTML elements -->
-    <!--[if lt IE 9]>
-      <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
-    <![endif]-->
-
-    <link href='http://fonts.googleapis.com/css?family=Trykker' rel='stylesheet' type='text/css'>
-    <link rel="stylesheet" href="/css/bootstrap.min.css">
-		<link rel="stylesheet" href="/css/styles.css">
-<!-- Le fav and touch icons -->
-  </head>
-
-  <body>
-    <header id="header">
-      <div class="trykker container">
-        <h1>Jennifer Saltzstein &amp;<br/>Ross Kaffenberger</h1>
-        <h2>May 19th, 2012</h2>
-      </div>
-    </header>
-    {% include header_nav.html %}
-    <div id="main" class="container clearfix">
-      <h3>{{ page.title }}</h3>
-      <p>{{ page.description }}</p>
-      <div class="content">
-        {{ content }}
-      </div>
-    </div>
-    <footer id="footer">
-      {% include footer_nav.html %}
-    </footer>
-    {% include ga.html %}
-    {% include mixpanel.html %}
-  </body>
-</html>
+---
+theme :
+  name : mark-reid
+---
+{% include JB/setup %}
+{% include themes/mark-reid/default.html %}
