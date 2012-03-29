@@ -4,23 +4,24 @@ title: Home
 description: Jennifer Saltzstein &amp; Ross Kaffenberger are getting married!
 ---
 <div id="page">
-  <h3 class="title">Jennifer and Ross are getting married!</h3>
-  <image src='/images/barb engagement.jpeg'/ width=400px>
-
-<div>
-  {% for post in site.posts %}
-    <div>
-      {{ post.content }}
-    </div>
-  {% endfor %}
-  
-  <h3 style='margin:1em 0'>FAQ</h3>
-  <p><a href='/hotelblocks.html'>What hotel should I stay at?</a></p>
-  <p><a href='/Ceremony.html'>Where's the ceremony?</a></p>
-  <p><a href='/Babysitting.html'>Are there babysitting options?</a></p>
-  <p><a href='/Guestbook.html'>Can I RSVP online?</a></p>
-  <p><a href='/contact_us.html'>How do I contact you?</a></p>
-
-</div>
+  <div style="margin-bottom:1em">
+    <h3 class="title">Jennifer and Ross are getting married!</h3>
+    <image src='/images/barb engagement.jpeg' width="400px">
+  </div>
+  <div>
+    {% for post in site.posts %}
+      <div>
+        {{ post.content }}
+      </div>
+    {% endfor %}
+    
+    <h3 style='margin:1em 0'>FAQ</h3>
+    <p><a href='/hotelblocks.html'>What hotel should I stay at?</a></p>
+    <p><a href='/ceremony.html'>Where's the ceremony?</a></p>
+    <p><a href='/moreinfo.html#registry'>Where are you registered?</a></p>
+    <p><a href='/contact_us.html'>I need a babysitter!</a></p>
+    <p><a href='/guestbook.html'>Can I RSVP online?</a></p>
+    <p><a href='/contact_us.html'>How do I contact you?</a></p>
+  </div>
 
 </div>
